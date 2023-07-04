@@ -1,0 +1,102 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Phase1 Suite">
+
+    <listeners>
+        <listener class-name="com.listeners.Listener"></listener>
+    </listeners>
+
+    <!--    <test name="Test" >-->
+    <test thread-count="1" name="Test" >
+
+        <classes>
+            <class name="com.tests.GetController">
+                <methods>
+                    <!--                    <include name="test1"></include>-->
+
+                    <include name="getCategoriesInUrdu" />
+                    <include name="getCategoriesInUrduAndVerfiyTitle" />
+                    <include name="getCategoriesInEnglish"/>
+                    <include name="getCategoriesInEnglishAndVerfiyTitle"/>
+                    <include name="getCategoriesInPunjabi" />
+                    <include name="getCategoriesInPunjabiAndVerfiyTitle" />
+                    <include name="getCategoriesInHindi"/>
+                    <include name="getCategoriesInHindiAndVerfiyTitle"/>
+                    <include name="getCategoriesByIdEnglish"/>
+                    <include name="getCategoriesByIdUrdu"/>
+                    <include name="getCategoriesByIdHindi"/>
+                    <include name="getCategoriesByIdPunjabi"/>
+                    <include name="getCategoryQuotesByIdEnglish"/>
+                    <include name="getCategoryQuotesByIdUrdu"/>
+                    <include name="getCategoryQuotesByIdPunjabi"/>
+                    <include name="getCategoryQuotesByIdHindi"/>
+
+                </methods>
+            </class>
+
+            <class name="com.tests.GetCoursesController">
+                <methods>
+                    <include name="GetCourseSessionsByIdEnglish"/>
+                    <include name="GetCourseSessionsByIdUrdu"/>
+                    <include name="GetCourseSessionsByIdHindi"/>
+                    <include name="GetCourseSessionsByIdPunjabi"/>
+
+                </methods>
+            </class>
+
+            <class name="com.tests.GetSsController">
+                <methods>
+                    <include name="GetSessionsByIdEnglish"/>
+                    <include name="GetSessionsByIdUrdu"/>
+                    <include name="GetSessionsByIdHindi"/>
+                    <include name="GetSessionsByIdPunjabi"/>
+
+                </methods>
+            </class>
+
+            <class name="com.tests.GetUser">
+                <methods>
+                    <include name="GetUserSessionsProgress"/>
+                    <include name="GetUserDetails"/>
+<!--                    <include name="GetUserEncryptedData"/>-->
+
+                </methods>
+            </class>
+
+            <class name="com.tests.PostUController">
+                <methods>
+                    <include name="postUserFeedback"/>
+                    <include name="postSessionCompleteUpdate"/>
+
+                </methods>
+            </class>
+
+            <class name="com.tests.PutController">
+                <methods>
+                    <include name="updateUserProfile"/>
+                    <include name="updateUserProfileWithInvalidGender"/>
+                    <include name="postSessionCompleteUpdate"/>
+
+                </methods>
+            </class>
+
+            <class name="com.tests.GetDetails">
+                <methods>
+                    <include name="getVersionCheck"/>
+                    <include name="versionCheckInvalidVersion"/>
+                    <include name="getReferralConstants"/>
+
+                </methods>
+            </class>
+
+            <class name="com.tests.PostController">
+                <methods>
+                    <include name="generateReferralCode"/>
+                    <include name="consumeReferralCode"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

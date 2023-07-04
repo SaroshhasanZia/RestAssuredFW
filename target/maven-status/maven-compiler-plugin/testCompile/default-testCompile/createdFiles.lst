@@ -1,0 +1,13 @@
+com/tests/PostRequest.class
+com/tests/PostReferralController.class
+com/tests/DataProviders.class
+com/tests/GetCoursesController.class
+com/tests/DeleteRequest.class
+com/tests/GetConstantsDetails.class
+com/tests/GetUserController.class
+com/tests/GetCategoryController.class
+com/tests/PostUserController.class
+com/tests/GetRequest.class
+com/tests/PutRequest.class
+com/tests/GetSessionsController.class
+com/tests/PutUserController.class
